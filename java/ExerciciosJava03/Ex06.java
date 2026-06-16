@@ -11,17 +11,21 @@ public class Ex06 {
         
         double totalCompra = 0;
         int contadorProduto = 1;
+        double valorProduto;
 
-        System.out.println("Digite o valor do produto " + contadorProduto +  ": R$");
-        double valorProduto = scan.nextDouble();
-
-        while (valorProduto != 0) {
-            totalCompra += valorProduto;
-            contadorProduto++;
+        do {
 
             System.out.println("Digite o valor do produto " + contadorProduto +  ": R$");
             valorProduto = scan.nextDouble();
-        }
+
+            if (valorProduto != 0 ) {
+                totalCompra += valorProduto;
+
+                contadorProduto++; 
+            }
+
+        } while (valorProduto != 0);
+        
         System.out.println("Total da compra: R$" + totalCompra);
 
         System.out.println("Digite o valor recebido: R$");
