@@ -8,8 +8,10 @@ public class Ex03 {
         
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Infome um número para saber a tabuada: ");
+        System.out.println("Informe um número para saber a tabuada: ");
         int n1 = scan.nextInt();
+
+        System.out.println("Tabuada de " + n1);
 
         for (int i = 1; i <= 10; i++) {
             int resultado = i * n1;

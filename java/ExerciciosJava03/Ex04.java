@@ -16,6 +16,21 @@ public class Ex04 {
             System.out.println("Soma: " + soma);
             System.out.println("Média: " + media);
         } */
+
+        int soma=0;
+        System.out.println("Digite o limite de números a contar");
+        int fim = scan.nextInt();
+
+        for (int i = 1; i <= fim; i++) {
+            System.out.println("Digite o " + i + "º número: ");
+            int numero = scan.nextInt();
+            soma+=numero;
+        }
+
+        double media = soma / fim;
+
+        System.out.println("Soma dos números: " + soma);
+        System.out.println("Média dos números: " + media);
         
         
 
