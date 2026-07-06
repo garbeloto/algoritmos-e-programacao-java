@@ -1,6 +1,5 @@
 package ExerciciosJava04;
 
-import java.util.Scanner;
 
 public class Ex02 {
     
