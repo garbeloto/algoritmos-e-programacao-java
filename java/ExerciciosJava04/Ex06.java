@@ -26,7 +26,7 @@ public class Ex06 {
                 media[i] = (nota1[i] + nota2[i]) / 2;
 
                 System.out.println("Média: " + media);
-            
+
                 if (media[i] >= 7) {
                     System.out.println("Aluno(a) Aprovado(a)!");
                 } else {
