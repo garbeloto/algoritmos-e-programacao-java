@@ -6,7 +6,7 @@ public class Ex01 {
     
     public static void main(String[] args) {
         
-         Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
         int[] A = new int[5];
         int[] B = new int[5];

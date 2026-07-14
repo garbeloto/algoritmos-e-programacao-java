@@ -1,40 +1,30 @@
 package ExerciciosJava04;
-
 import java.util.Scanner;
 
-public class Ex06 {
-    
+public class Ex06{
+
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
 
-        double[] nota1 = new double[10];
-        double[] nota2 = new double[10];
-        double[] media = new double[10];
+        double[] notas1 = new double[10];
+        double[] notas2 = new double[notas1.length];
+        double[] resultados = new double[notas1.length];
 
+        for (int i = 0; i < notas1.length; i++){
+            System.out.println("Entre com a nota 1 do aluno1: ");
+            notas1[i] = scan.nextDouble();
 
-        for (int i = 0; i < media.length; i++) {
+            System.out.println("Entre com a nota 2 do aluno1: ");
+            notas2[i] = scan.nextDouble();
 
-            for (int i1 = 0; i1 < nota1.length; i1++) {
-            System.out.println("Digite sua primeira nota: ");
-            nota1[i]= scan.nextInt();
-
-            for (int i2 = 0; i2 < nota1.length; i2++) {
-            System.out.println("Digite sua segunda nota: ");
-            nota2[i]= scan.nextInt();
+            resultados[i] = ((notas1[i] + notas2[i]) / 2);
             
-                media[i] = (nota1[i] + nota2[i]) / 2;
-
-                System.out.println("Média: " + media);
-
-                if (media[i] >= 7) {
-                    System.out.println("Aluno(a) Aprovado(a)!");
-                } else {
-                    System.out.println("Aluno(a) Reprovado(a)!");
-                }
-
-                }
-            }
         }
+
+        System.out.println("Nota 1= ");
+        System.out.println(notas1[1]);
+
+        
     }
 }
